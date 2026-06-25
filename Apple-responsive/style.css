@@ -1,0 +1,1285 @@
+/* ============================================================
+   APPLE CLONE — MERGED STYLESHEET (MOBILE-FIRST)
+   Default = Mobile styles  |  Desktop via min-width:768px
+   All image paths from original index.html & style.css
+   ============================================================ */
+
+/* ---- RESET & BASE ----------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    word-spacing: -2px;
+}
+
+img { max-width: 100%; }
+
+/* ============================================================
+   DEFAULT MOBILE STYLES (Viewport width < 768px)
+   ============================================================ */
+
+/* --- Header & Navigation (Mobile) --- */
+.navi-bar {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 48px;
+    padding: 0 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    font-size: 0.75em;
+}
+
+.logo-link {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide desktop links by default */
+.nav-links { display: none; }
+
+/* Right-corner cluster: search + cart + hamburger menu stay together */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.apple-logo,
+.search-logo,
+.cart-logo {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+/* Show hamburger menu */
+.mobile-menu-toggle { display: block; }
+
+.menu-iconn {
+    width: 20px;
+    cursor: pointer;
+}
+
+.menu-iconn span {
+    display: block;
+    height: 3px;
+    background: black;
+    margin: 6px 0;
+}
+
+.mobile-menu-toggle details summary {
+    list-style: none;
+    cursor: pointer;
+}
+.mobile-menu-toggle details summary::-webkit-details-marker { display: none; }
+
+.mobile-menu {
+    display: block;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    background: white;
+    list-style: none;
+    padding: 20px 40px 30px;
+    z-index: 200;
+    height: 100vh;
+}
+
+.mobile-menu li { padding: 12px 0; font-size: 1.9em; font-weight: 700; }
+.mobile-menu a  { color: black; text-decoration: none; }
+
+
+/* --- Section 1: iPhone Hero (Mobile) --- */
+.first-section {
+    margin-top: 48px; /* offset fixed mobile header */
+    background-image: url('Images/hero_iphone_family__be5jkzxszb1e_large_2x.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+.first-section .first-line {
+    letter-spacing: -1px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 32px;
+    font-weight: 650;
+}
+
+.first-section .second-line {
+    letter-spacing: -0.8px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.first-section-links {
+    display: flex;
+    justify-content: center;
+}
+
+.iphone-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.iphone-links a { text-decoration: none; }
+
+.learn-more-box {
+    height: 40px;
+    width: 120px;
+    background-color: #0077e6;
+    border-radius: 30px;
+}
+
+.shop-box {
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid #0077e6;
+}
+
+.inner-link,
+.inner-link-1 {
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-link-1 { color: #0077e6; }
+
+.shop-box:hover { background-color: #0077e6; }
+.shop-box:hover .inner-link-1 { color: white; }
+
+
+/* --- Section 2: Father's Day (Mobile) --- */
+.second-section {
+    margin-top: 10px;
+    background-image: url('Images/hero_fd26__c9vr0hxu24eq_large_2x.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+.first-second-line {
+    letter-spacing: -1px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 32px;
+    font-weight: 650;
+}
+
+.second-second-line {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.second-section-links {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.second-section-link-box {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 80px;
+    background-color: #0077e6;
+    border-radius: 30px;
+}
+
+.inner-link-2 {
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/* --- Section 3: Apple for College (Mobile) --- */
+.third-section {
+    margin-top: 10px;
+    background-image: url('Images/hero_college_students_2026__dzrtx52rt9aq_mediumtall.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+    
+
+    background-color: #f5f5f7;
+
+    text-align: center;
+
+   
+}
+
+.first-third-line {
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.second-third-line {
+    padding-top: 6px;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 480;
+    letter-spacing: -0.5px;
+}
+
+.third-section-links {
+    padding-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.third-section-links-box {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    background-color: #0077e6;
+    border-radius: 30px;
+}
+
+.inner-link-3 {
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/* --- Grid Structure / Grids Stack Vertically by Default (Mobile) --- */
+.fourth-section,
+.fifth-section,
+.sixth-section {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fourth-section .left-wrapper-1, .fourth-section .right-wrapper-1,
+.fifth-section  .left-wrapper-2, .fifth-section  .right-wrapper-2,
+.sixth-section  .left-wrapper-3, .sixth-section  .right-wrapper-3 {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* --- Section 4: MacBook Air + iPad Air Inner Layout (Mobile) --- */
+.fourth-section .left-wrapper-1 {
+    background-image: url('Images/promo_macbook_air_m5__e5xk2yysqiie_large_2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #f5f5f7;
+}
+
+.fourth-section .right-wrapper-1 {
+    background-image: url('Images/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f7;
+}
+
+.left-wrapper-1 .first-fourth-line {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.left-wrapper-1 .second-fourth-line {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+
+.fourth-section-links-left,
+.fourth-section-links-right { padding-top: 14px; }
+
+.fourth-section-links-left ul,
+.fourth-section-links-right ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.fourth-section-links-left ul a,
+.fourth-section-links-right ul li a { text-decoration: none; }
+
+.left-wrapper-1 .learn-more-box-2,
+.fourth-section-links-right .learn-more-box-2 {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    width: 100px;
+    background-color: #0077e6;
+    border-radius: 980px;
+}
+
+.left-wrapper-1 .buy-box,
+.fourth-section-links-right .buy-box {
+    width: 60px;
+    background-color: transparent;
+    border-radius: 980px;
+    border: 1px solid #0077e6;
+}
+
+.left-wrapper-1 .inner-link-4,
+.fourth-section-links-right .inner-link-6 {
+    word-spacing: 1px;
+    font-size: 12px;
+    font-weight: 480;
+    padding-top: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.left-wrapper-1 .inner-link-5,
+.fourth-section-links-right .inner-link-7 {
+    font-size: 12px;
+    font-weight: 480;
+    padding-top: 8px;
+    color: #0077e6;
+    display: flex;
+    justify-content: center;
+}
+
+.left-wrapper-1 .buy-box:hover,
+.right-wrapper-1 .buy-box:hover { background-color: #0077e6; }
+.buy-box:hover .inner-link-5,
+.buy-box:hover .inner-link-7   { color: white; }
+
+.ipad-logo {
+    width: clamp(140px, 55vw, 280px);
+    height: auto;
+    object-fit: contain;
+}
+
+.right-wrapper-1 p {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+
+
+/* --- Section 5: MacBook Pro + Apple Watch Inner Layout (Mobile) --- */
+.fifth-section .left-wrapper-2 {
+    background-image: url('Images/promo_macbook_pro__c9td9w1mc8ia_large_2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #f5f5f7;
+}
+
+.fifth-section .right-wrapper-2 {
+    background-image: url('Images/promo_apple_watch_series_11__gnlwqxe1jlu2_large_2x.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #f5f5f7;
+}
+
+.fifth-section .first-fifth-line {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+}
+
+.fifth-section .second-fifth-line {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fifth-section .fifth-section-links-left ul,
+.fifth-section-links-right ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 14px;
+    gap: 14px;
+}
+
+.fifth-section .fifth-section-links-left ul li a,
+.fifth-section-links-right ul li a { text-decoration: none; }
+
+.fifth-section .learn-more-box-3,
+.fifth-section .learn-more-box-4 {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    width: 100px;
+    background-color: #0077e6;
+    border-radius: 980px;
+}
+
+.fifth-section .left-wrapper-2 .buy-box,
+.fifth-section .right-wrapper-2 .buy-box {
+    width: 60px;
+    background-color: transparent;
+    border-radius: 980px;
+    border: 1px solid #0077e6;
+}
+
+.fifth-section .inner-link-8,
+.fifth-section .inner-link-10 {
+    word-spacing: 1px;
+    font-size: 12px;
+    font-weight: 480;
+    padding-top: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.fifth-section .inner-link-9,
+.fifth-section .inner-link-11 {
+    font-size: 12px;
+    font-weight: 480;
+    padding-top: 8px;
+    color: #0077e6;
+    display: flex;
+    justify-content: center;
+}
+
+.left-wrapper-2 .buy-box:hover,
+.right-wrapper-2 .buy-box:hover { background-color: #0077e6; }
+.buy-box:hover .inner-link-9,
+.buy-box:hover .inner-link-11   { color: white; }
+
+.watch-logo {
+    width: clamp(160px, 50vw, 260px);
+    height: auto;
+    object-fit: contain;
+}
+
+.third-fifth-line {
+    margin-top: 0;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-size: 16px;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+
+/* --- Section 6: Apple Card + Trade In Inner Layout (Mobile) --- */
+.sixth-section .left-wrapper-3 {
+    background-image: url('Images/promo_apple_card_airpods__dpbuw4e90126_large_2x.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #f5f5f7;
+}
+
+.sixth-section .right-wrapper-3 {
+    background-image: url('Images/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #f5f5f7;
+}
+
+.sixth-section .left-wrapper-3 .card-logo {
+    width: clamp(110px, 40vw, 220px);
+    height: auto;
+    object-fit: contain;
+}
+
+.sixth-section .first-sixth,
+.sixth-section .second-sixth,
+.sixth-section .predict-money,
+.sixth-section .predict-money-2,
+.sixth-section .predict-money-3 {
+    font-size: 17px;
+    font-weight: 490;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+
+.sixth-section .first-sixth { margin-top: -15px; }
+
+.sixth-section .third-sixth {
+    font-size: 14px;
+    color: #6e6e73;
+    font-weight: 500;
+    word-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.sixth-section .learn-more-box-5 {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    width: 100px;
+    background-color: #0077e6;
+    border-radius: 980px;
+}
+
+.sixth-section .left-wrapper-3 a { text-decoration: none; }
+
+.sixth-section .inner-link-12 {
+    word-spacing: 1px;
+    font-size: 12px;
+    font-weight: 480;
+    padding-top: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.sixth-section .trade-image {
+    width: clamp(150px, 45vw, 260px);
+    height: auto;
+    object-fit: contain;
+}
+
+.sixth-section .predict-money { margin-top: -10px; }
+.sixth-section .predict-money-3 { padding-bottom: 12px; }
+
+.get-your-estimate-links-box {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    width: 140px;
+    background-color: #0077e6;
+    border-radius: 980px;
+}
+
+.sixth-section .inner-link-13 {
+    word-spacing: 1px;
+    font-size: 12px;
+    font-weight: 480;
+    padding-top: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* --- Entertainment Section --- */
+.entertainment-section {
+    background-color: #f5f5f7;
+    padding: 38px 0 32px;
+    overflow: hidden;
+}
+
+.entertainment-section h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 18px;
+}
+
+.entertainment-feature-row,
+.entertainment-card-row {
+    display: flex;
+    gap: 14px;
+    width: max-content;
+    scrollbar-width: none;
+    will-change: transform;
+}
+
+.entertainment-feature-row::-webkit-scrollbar,
+.entertainment-card-row::-webkit-scrollbar {
+    display: none;
+}
+
+.entertainment-feature-row {
+    margin-left: 10vw;
+    padding-bottom: 14px;
+    animation: entertainment-marquee 70s linear infinite;
+}
+
+.entertainment-card-row {
+    margin-left: 14px;
+    animation: entertainment-marquee 42s linear infinite;
+}
+
+.entertainment-feature-row:hover,
+.entertainment-card-row:hover {
+    animation-play-state: paused;
+}
+
+.entertainment-feature,
+.entertainment-card {
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.entertainment-feature {
+    width: min(82vw, 760px);
+    height: 365px;
+}
+
+.entertainment-feature img,
+.entertainment-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.entertainment-feature-copy {
+    position: absolute;
+    left: 42px;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: white;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.42);
+}
+
+.entertainment-feature-copy a,
+.entertainment-card-copy a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    padding: 0 18px;
+    border-radius: 980px;
+    background-color: rgba(255,255,255,0.92);
+    color: #1d1d1f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    word-spacing: 0;
+}
+
+.entertainment-feature-copy p {
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 0;
+}
+
+.entertainment-feature-copy span {
+    font-size: 12px;
+}
+
+.entertainment-card {
+    width: 190px;
+    height: 255px;
+}
+
+.entertainment-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.08) 42%, rgba(0,0,0,0.48));
+    pointer-events: none;
+}
+
+.entertainment-card-copy {
+    position: absolute;
+    inset: 14px 12px 16px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 9px rgba(0,0,0,0.45);
+}
+
+.entertainment-card-copy p {
+    align-self: flex-start;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+    word-spacing: 0;
+}
+
+.entertainment-card-copy h3 {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.18;
+    font-weight: 700;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.entertainment-card-copy a {
+    min-height: 30px;
+    padding: 0 14px;
+    font-size: 12px;
+}
+
+.entertainment-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.entertainment-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #8f8f94;
+    opacity: 0.45;
+}
+
+.entertainment-dots .active {
+    width: 28px;
+    border-radius: 999px;
+    opacity: 0.9;
+}
+
+@keyframes entertainment-marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* --- Footer Layout (Mobile) --- */
+.footer { background-color: #f8f8ff; }
+
+.footer-wrapper,
+.footer-wrapper-2,
+.end-part,
+.copyright-wrapper {
+    margin: 0 20px;
+}
+
+.footer-wrapper {
+    padding: 17px 0 11px;
+    border-bottom: 1px solid rgba(0,0,0,0.16);
+}
+
+.footer-wrapper-2 {
+    border-bottom: 1px solid rgba(0,0,0,0.16);
+}
+
+.footer-wrapper-list {
+    font-size: 11px;
+    line-height: 1.3333733333;
+    letter-spacing: -0.01em;
+}
+
+.footer-text,
+.footer-text-2 {
+    word-spacing: 1px;
+    color: rgba(0,0,0,0.56);
+    font-weight: 540;
+    font-size: 11px;
+    line-height: 1.3333733333;
+    letter-spacing: -0.01em;
+}
+
+/* Hide Desktop multi-column standard links */
+.footer-lists { display: none; }
+
+/* Show mobile single-column accordion menus */
+.mobile-footer-links {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,0.16);
+    font-size: 12px;
+}
+
+.mobile-footer-links details {
+    border-bottom: 1px solid rgba(0,0,0,0.16);
+}
+
+.mobile-footer-links summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 13px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-spacing: 0px;
+    opacity: 0.9;
+}
+.mobile-footer-links summary:hover {
+    opacity: 1;
+}
+
+.mobile-footer-links summary::-webkit-details-marker { display: none; }
+
+/* Caret FontAwesome bindings */
+.mobile-footer-links summary::after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    font-size: 16px;
+    color: #6e6e73;
+}
+.mobile-footer-links details[open] summary::after { content: "\f106"; }
+
+.mobile-footer-links ul {
+    list-style: none;
+    padding: 0 16px 14px 16px;
+    margin-left: 15px;
+}
+
+.mobile-footer-links ul li {
+    padding: 6px 0;
+    
+}
+
+.mobile-footer-links ul li a {
+    text-decoration: none;
+    color: #2a2a2c;
+    font-size: 12px;
+    word-spacing: 0px;
+}
+
+.mobile-footer-links ul li a:hover { text-decoration: underline; }
+
+.end-part {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: #6e6e73 1px solid;
+}
+
+.end-part-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    line-height: 1.3333733333;
+    color: rgba(0,0,0,0.56);
+    font-weight: 540;
+    word-spacing: 1px;
+}
+
+.end-part-text a { color: rgb(58,128,250); word-spacing: 1px; }
+
+.copyright-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    font-size: 11px;
+    line-height: 1.3333733333;
+    color: rgba(0,0,0,0.56);
+    font-weight: 540;
+}
+
+.footer-link-terms-list {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    margin-left: 0;
+    flex-wrap: wrap;
+}
+
+.footer-link-terms-list li a,
+.footer-link-country a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.75);
+    word-spacing: 1px;
+}
+
+.footer-link-terms-list li a:hover,
+.footer-link-country a:hover { text-decoration: underline; }
+
+
+/* ============================================================
+   DESKTOP RESPONSIVE ENHANCEMENTS (Viewport width >= 768px)
+   ============================================================ */
+@media (min-width: 768px) {
+
+    /* --- Hero Layout Adjustments (Desktop) --- */
+    .first-section {
+        height: 600px;
+    }
+    .first-section .first-line,
+    .second-section .first-second-line,
+    .third-section .first-third-line {
+        font-size: 55px;
+        padding-top: 50px;
+        letter-spacing: -2px;
+    }
+    .first-section .second-line {
+        font-size: 26px;
+        padding-top: 5px;
+    }
+    .learn-more-box { height: 44px; width: 130px; border-radius: 980px; }
+    .shop-box { width: 140px; border-radius: 980px; }
+    .inner-link, .inner-link-1 { padding-top: 12px; font-size: 16px; }
+
+
+    /* --- Section 2 & 3 Adjustments (Desktop) --- */
+    .second-section,
+    .third-section {
+        height: 600px;
+        margin-top: 12px;
+    }
+    .third-section{
+        background-size: 1200px;
+    }
+    .fourth-section{
+        margin-top: 6px;
+    }
+    .second-second-line {
+        font-size: 25px;
+        padding-top: 5px;
+    }
+    .second-section-link-box { height: 44px; width: 85px; border-radius: 980px; }
+    .inner-link-2 { padding-top: 12px; font-size: 16px; }
+
+    .third-section .first-third-line,
+    .third-section .second-third-line {
+        display: flex;
+        justify-content: center;
+    }
+    .second-third-line { font-size: 25px; padding-top: 5px; letter-spacing: -0.9px; }
+    .third-section-links { padding-top: 15px; }
+    .third-section-links-box { height: 44px; width: 130px; border-radius: 980px; }
+    .inner-link-3 { padding-top: 12px; }
+
+
+    /* --- Flex Grid Structure / Side-by-Side Panels (Desktop) --- */
+    .fourth-section,
+    .fifth-section,
+    .sixth-section {
+        padding: 6px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .fourth-section .left-wrapper-1, .fourth-section .right-wrapper-1,
+    .fifth-section  .left-wrapper-2, .fifth-section  .right-wrapper-2,
+    .sixth-section  .left-wrapper-3, .sixth-section  .right-wrapper-3 {
+        height: 490px;
+    }
+
+
+    /* --- Inner Component Adjustments (Desktop) --- */
+    .left-wrapper-1 .first-fourth-line { font-size: 38px; padding-top: 46px; }
+    .left-wrapper-1 .second-fourth-line { font-size: 20px; }
+    .left-wrapper-1 .learn-more-box-2,
+    .fourth-section-links-right .learn-more-box-2 { width: 104px; height: 36px; }
+    .left-wrapper-1 .inner-link-4, .left-wrapper-1 .inner-link-5,
+    .fourth-section-links-right .inner-link-6, .fourth-section-links-right .inner-link-7 { padding-top: 10px; font-size: 13px; }
+    .right-wrapper-1 { padding-top: 50px; }
+    .right-wrapper-1 p { font-size: 20px;}
+    .ipad-logo { width: clamp(150px, 16vw, 300px); }
+
+    .fifth-section .first-fifth-line { font-size: 38px; padding-top: 50px; }
+    .fifth-section .second-fifth-line { font-size: 20px; }
+    .fifth-section .learn-more-box-3, .fifth-section .learn-more-box-4 { width: 104px; height: 36px; }
+    .fifth-section .inner-link-8, .fifth-section .inner-link-9,
+    .fifth-section .inner-link-10, .fifth-section .inner-link-11 { padding-top: 10px; font-size: 13px; }
+    .fifth-section .right-wrapper-2 { padding-top: 50px; }
+    .watch-logo { width: clamp(220px, 24vw, 340px); }
+    .third-fifth-line { font-size: 19px; margin-top: -10px; }
+
+    .sixth-section .left-wrapper-3, .sixth-section .right-wrapper-3 { padding-top: 50px; }
+    .card-logo { width: clamp(140px, 16vw, 240px); }
+    .trade-image { width: clamp(170px, 18vw, 280px); }
+    .sixth-section .first-sixth, .sixth-section .second-sixth,
+    .sixth-section .predict-money, .sixth-section .predict-money-2, .sixth-section .predict-money-3 { font-size: 20px; }
+    .sixth-section .learn-more-box-5 { width: 104px; height: 36px; }
+    .sixth-section .inner-link-12 { padding-top: 10px; font-size: 13px; }
+    .get-your-estimate-links-box { width: 150px; height: 36px; }
+    .sixth-section .inner-link-13 { padding-top: 10px; font-size: 13px; }
+
+    .entertainment-section {
+        padding-top: 44px;
+        padding-bottom: 34px;
+    }
+
+    .entertainment-section h2 {
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .entertainment-feature-row {
+        margin-left: calc((100vw - min(80vw, 760px)) / 2);
+        padding-right: 0;
+    }
+
+    .entertainment-feature {
+        width: min(80vw, 760px);
+        height: 365px;
+    }
+
+    .entertainment-card-row {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .entertainment-card {
+        width: 220px;
+        height: 255px;
+    }
+
+
+    /* --- Footer Components (Desktop Layout Shifts) --- */
+    .footer-wrapper,
+    .footer-wrapper-2,
+    .footer-lists,
+    .end-part,
+    .copyright-wrapper {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+    
+    .end-part { padding-top: 40px; }
+    .copyright-wrapper { flex-direction: row; justify-content: space-between; align-items: center; }
+    .footer-link-terms-list { margin-left: -150px; }
+
+    /* Show multi-column footer systems, remove accordion layout elements */
+    .mobile-footer-links { display: none; }
+    .footer-lists {
+        display: flex;
+        font-size: 12px;
+        line-height: 1.3333733333;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        padding-top: 20px;
+        gap: 50px;
+    }
+    .footer-lists ul { list-style: none; }
+    .footer-lists ul li { word-spacing: 1px; font-size: 12px; font-weight: 550; padding-top: 10px; }
+    .footer-lists ul li ul li { font-size: 11px; font-weight: 400; }
+    .footer-lists ul li ul li a { color: rgba(0,0,0,0.72); text-decoration: none; word-spacing: 1px; font-weight: 500; }
+    .footer-lists ul li ul li a:hover { text-decoration: underline; }
+    .footer-link-col-1-bottom, .footer-link-col-2-bottom,
+    .footer-link-col-4-bottom, .footer-link-col-5-bottom { margin-top: 20px; }
+}
+
+/* ============================================================
+   FULL DESKTOP HEADER (Viewport width >= 1100px)
+   The 11-item nav menu needs real room to fit on one line.
+   Showing it any earlier (e.g. at 768px) makes it wider than
+   the viewport, and because the bar is centered, that overflow
+   pushes the Apple logo off the left edge of the screen as the
+   window shrinks. Below 1100px we keep the simplified
+   logo + icons header instead, which also fits what was asked
+   for the "mobile version" of the header.
+   ============================================================ */
+@media (min-width: 834px) {
+
+    .navi-bar {
+        background-color: rgba(255, 255, 255, 0.8);
+        height: auto;
+        padding: 15px clamp(15px, 3vw, 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(20px, 3vw, 40px);
+        position: sticky;
+        top: 0;
+        font-size: 12px;
+    }
+
+    .nav-links { display: block; }
+
+    .top-nav-links {
+        display: flex;
+        list-style: none;
+        flex-wrap: nowrap;
+        gap: clamp(16px, 1.6vw, 30px);
+    }
+
+    .top-nav-links > li {
+        display: flex;
+        align-items: center;
+        min-height: 18px;
+    }
+
+    .top-nav-links a {
+        text-decoration: none;
+        color: #1d1d1f;
+        white-space: nowrap;
+    }
+    .top-nav-links a:hover { color: #000; }
+
+    .mega-menu {
+        position: fixed;
+        top: 45px;
+        left: 0;
+        right: 0;
+        background-color: #f5f5f7;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+        z-index: 95;
+        pointer-events: none;
+    }
+
+    .mega-menu::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(245, 245, 247, 0.82);
+        backdrop-filter: blur(70px) saturate(140%);
+        -webkit-backdrop-filter: blur(70px) saturate(140%);
+        pointer-events: none;
+    }
+
+    .top-nav-links > li:hover .mega-menu,
+    .top-nav-links > li:focus-within .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .mega-menu-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        min-height: 360px;
+        padding: 38px 22px 58px;
+        display: flex;
+        align-items: flex-start;
+        gap: 70px;
+    }
+
+    .mega-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 140px;
+    }
+
+    .mega-column p {
+        color: #6e6e73;
+        font-size: 12px;
+        font-weight: 500;
+        word-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    .mega-column a {
+        color: #1d1d1f;
+        font-size: 13px;
+        font-weight: 650;
+        line-height: 1.35;
+        white-space: normal;
+        word-spacing: 0;
+    }
+
+    .mega-column-large {
+        min-width: 190px;
+        gap: 8px;
+    }
+
+    .mega-column-large a {
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: -0.4px;
+    }
+    .mega-column-large .under-text a {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: 0;
+    }
+
+    .nav-icons {
+        gap: 14px;
+        margin-left: 0;
+    }
+
+    .apple-logo,
+    .search-logo,
+    .cart-logo {
+        width: 15px;
+        height: 15px;
+        filter: none;
+    }
+
+    /* Hide mobile menu elements once the full nav fits */
+    .mobile-menu-toggle,
+    .mobile-menu { display: none !important; }
+
+    /* Header is sticky (in-flow) here rather than fixed/floating,
+       so the hero no longer needs the 48px clearance offset. */
+    .first-section { margin-top: 0; }
+}
+
+/* ============================================================
+   MID-RANGE / TABLET ADJUSTMENT PRESETS
+   ============================================================ */
+@media (max-width: 1100px) and (min-width: 768px) {
+    .footer-wrapper,
+    .footer-wrapper-2,
+    .footer-lists,
+    .end-part,
+    .copyright-wrapper {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .footer-link-terms-list { margin-left: 0; }
+}

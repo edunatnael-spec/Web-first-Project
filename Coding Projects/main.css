@@ -1,0 +1,1454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pc-only{
+    display: none;
+}
+body{
+    background-color:#fff;
+}
+.sticky-button-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #00005c;
+    height: 48px;
+    width: 142px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.sticky-button-box-2{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 999;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: rgb(0, 170, 237);
+    color: white;
+    width: 150px;
+    height: 38px;
+    border: none;
+    cursor: pointer;
+}
+.mdi-message:before{
+    content: "\f453";
+}
+.nav-bar{
+    position: fixed;
+    border-radius: 15px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: white;
+    height: 19vw;
+    z-index: 999;
+}
+.nav-bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-right:7vw;
+    padding-left:7vw;
+}
+.awash-logo{
+    position: relative;
+    margin-top: 5vw;
+    width: 55vw;
+}
+.fa-align-justify{
+    position: relative;
+    font-size: 6vw;
+    content: "\f039";
+}
+.hamburger-button{
+    padding-top: 8vw;
+}
+.slideshow-container {
+    margin-top: 50px;
+    display: flex;/* Aligns slides horizontally side-by-side */
+}
+.mySlides {
+    height: 276px;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    animation: slideShow 10s infinite ease-out; 
+}
+.mySlides img {
+    height: 276px;
+    width: 100%;
+    display: block;
+    object-fit:cover;
+}
+@keyframes slideShow {
+    0%, 45% { transform: translateX(0%); }       /* Hold on Slide 1 */
+    50%, 95% { transform: translateX(-100%); }   /* Slide to and hold on Slide 2 */
+    100% { transform: translateX(0%); }          /* Loop smoothly back to Slide 1 */
+}
+.learn-more-box-1, 
+.personal-banking-box {
+    position: absolute;
+
+}
+
+
+.inner-link-1, 
+.inner-link-2 {
+    display: inline-block;
+    padding: 3vw 6vw;
+    background-color: #d57535;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 4vw;
+}
+.learn-more-box-1 {
+    left:10%;
+    bottom: 5%;
+}
+
+.personal-banking-box {
+    left:10%;
+    bottom: 5%;
+}
+.section-2{
+    padding-top:40px ;
+}
+.section-2 .sec-2-text{
+    margin-left: 5vw;
+    text-align: center;
+}
+.section-2 h2{
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 30px;
+    color:#000066;
+    padding-bottom: 40px;
+}
+.img-box-1,
+.img-box-2,
+.img-box-3,
+.img-box-4,
+.img-box-5,
+.img-box-6 {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.img-box-1 {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+    border-radius: 15px;
+}
+
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+    margin-bottom: 18px;
+}
+
+.img-box-1-title,
+.img-box-2-title,
+.img-box-3-title,
+.img-box-4-title,
+.img-box-5-title,
+.img-box-6-title {
+    color: #000;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 5vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.img-box-1-title { padding-top: 15px; }
+.img-box-2-title { padding-top: 1.5vw; }
+.img-box-3-title,
+.img-box-4-title,
+.img-box-5-title,
+.img-box-6-title { padding-top: 2vw; }
+
+.img-1-text,
+.img-2-text,
+.img-3-text,
+.img-4-text,
+.img-5-text,
+.img-6-text {
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 5vw;
+}
+
+.img-1-text,
+.img-2-text { margin: 8px 0; }
+.img-3-text,
+.img-4-text,
+.img-5-text,
+.img-6-text { margin: 1.5vw 0; }
+.img-1-text { padding-bottom: 5vw; }
+.img-2-text,
+.img-3-text { padding-bottom: 18vw; }
+.img-4-text { padding-bottom: 3vw; }
+.img-5-text,
+.img-6-text { padding-bottom: 7vw; }
+
+.learn-more-2-box,
+.learn-more-3-box,
+.learn-more-4-box,
+.learn-more-5-box,
+.learn-more-6-box,
+.learn-more-7-box {
+    height: 38px;
+    margin-left: 5vw;
+    background: linear-gradient(90deg, #00005c 0%, #63323e 55%, #f18825 100%);
+    width: 160px;
+    border-radius: 6vw;
+    margin-bottom: 2vw;
+}
+
+.inner-link-3,
+.inner-link-4,
+.inner-link-5,
+.inner-link-6,
+.inner-link-7,
+.inner-link-8 {
+    display: inline-flex;
+    gap: 30px;
+    font-size: 15px;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 3vw;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.section-3 { padding-top: 2vw; }
+.section-3 .sec-3-text { text-align: center; }
+.section-3 h2 {
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 28px;
+    color: #000066;
+    padding-bottom: 4vw;
+}
+
+.section-4,
+.section-5,
+.section-6,
+.section-7 { padding-top: 20px; }
+
+.count-img{
+
+    width: 95vw;
+    height: 70vw;
+}
+.section-9{
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
+.sec-9-text-1{
+    padding-top: 4vw;
+    text-align: center;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 25px;
+    color:#000066;
+    font-weight: bold;
+}
+.sec-9-text-2{
+    text-align: center;
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin: 1.5vw 0;
+    line-height: 1.5;
+    padding-bottom: 7vw;
+}
+/* CONTAINER - Kept exactly the same size */
+.slideshow-viewport {
+    width: 95%;          
+    max-width: 1400px;   
+    margin: 40px auto;   
+    overflow: hidden; 
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Horizontal Track */
+.slideshow-track {
+    display: flex;
+    width: 700%; 
+    animation: multiSlideShow 35s infinite ease-in-out; 
+}
+
+/* Individual Slide Box */
+.promo-slide {
+    width: 14.2857%; 
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; 
+    background: #fff;
+}
+
+/* IMAGES - Made smaller/shorter while maintaining container width */
+.slide-image {
+    width: 100%;        
+    height: 280px;       /* Reduced from 450px to make the picture shorter */
+    display: block;
+    object-fit: cover;   
+}
+
+/* TEXT BOX BELOW */
+.slide-body {
+    padding: 40px 50px;  /* Generous padding for a clean, spacious look */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #fafafa; 
+    border-top: 1px solid #eee;
+}
+.slide-titles{
+    font-size:35px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+.slide-description {
+    font-size: 18px;     
+    color: #333;
+    line-height: 1.6;   
+    margin-bottom: 5px;
+}
+
+.slide-actions {
+    padding-top: 50px;
+    margin-top: auto; 
+}
+
+/* BUTTON */
+.slide-cta-button {
+    display: inline-block;
+    padding: 12px 40px; 
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.slide-cta-button:hover {
+    background-color: #0056b3;
+}
+/* target only the image inside the very last slide */
+.promo-slide:last-child .slide-image {
+    object-fit: contain;  /* Stops the image from cropping and stretching */
+    height: 180px;        /* Forces it to be much shorter than the 280px standard */
+    padding: 20px 0;      /* Adds breathing room around it so it looks small and clean */
+    background: #ffffff;  /* Matches the background color of the slide box */
+}
+
+/* 7-Slide Animation Steps */
+@keyframes multiSlideShow {
+    0%, 11% { transform: translateX(0%); }
+    14%, 25% { transform: translateX(-14.2857%); }
+    28%, 39% { transform: translateX(-28.5714%); }
+    42%, 53% { transform: translateX(-42.8571%); }
+    56%, 67% { transform: translateX(-57.1428%); }
+    70%, 81% { transform: translateX(-71.4285%); }
+    84%, 95% { transform: translateX(-85.7142%); }
+    100% { transform: translateX(100%); }
+}
+.slide-footer-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 6vw;
+    gap:1.5vw;
+    padding-bottom: 80px;
+}
+.slide-footer-img-1{
+    height: 8vw;
+    width:14vw;
+}
+.get-text{
+    font-family: "Ubuntu", Sans-serif;
+    text-align: center;
+    color: #7a7a7a;
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+.comp{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display:block;
+    
+}
+.comp-img-1,.comp-img-2,.comp-img-3,.comp-img-4,.comp-img-5{
+    display:inline-block;
+    margin: 1vw;
+    border-width: .1px .1px .1px .1px;
+    border-style: solid;
+    border-color: #7a7a7a;
+    width: 30vw;
+    height: 25vw;
+    border-radius: 10px;
+}
+.footer-sec{
+    padding-top: 35px;
+    background-color: #00005c;
+}
+.footer-logo-img{
+    height: 30vw;
+    width: 30vw;
+    padding: 1vw;
+}
+.footer-text{
+    padding-top: 50px;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #d57535;
+    padding-bottom: 10px;
+}
+.follow-list{
+    margin-left: 20px;
+    list-style: none;
+    display: inline-flex;
+    gap: 25px;
+}
+.follow-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+    color: #fff;
+}
+.follow-circle1{
+    background-color:#3b5998;
+}.follow-circle2{
+    background-color:#69727d;
+}.follow-circle3{
+    background-color:#0077b5;
+}.follow-circle4{
+    background-color:#262626;
+}.follow-circle5{
+    background-color:#cd201f;
+}.follow-circle6{
+    background-color:#2ca5e0;
+}
+input[type="email"] {
+    margin-left: 10px;
+    width: 95vw;
+    height: 8vw;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 3vw;
+}
+button[type="submit"] {
+    margin-left: 13px; 
+    background-color:#f18825;
+    color: #000066;
+    border: none;
+    cursor: pointer;
+    width: 93vw;
+    height: 8vw;
+    border-radius: 6px;
+    font-size: 4vw;
+    font-weight: 600;
+}
+.follow-us-text{
+    padding-top: 50px;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #d57535;
+    padding-bottom: 10px;
+}
+.contact-us-sec,
+.personal-banking,
+.interest-free-sec,
+.digital-sec,
+.quick-link-sec {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.contact-title,
+.personal-title,
+.interest-title,
+.digital-title,
+.quick-title {
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 580;
+    font-size: 25px;
+    color: #d57535;
+    padding-bottom: 20px;
+}
+
+.contact-links a,
+.personal-links a,
+.interest-links a,
+.digital-links a,
+.quick-links a {
+    font-family: "Ubuntu", Sans-serif;
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+    font-weight: 500;
+}
+.last-sect{
+    padding-left: 20px;
+}
+.first-last-line{
+    padding-top: 40px;
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 580;
+    font-size: 25px;
+    color: #d57535;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.swift-code{
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 580;
+    font-size: 20px;
+    color: #d57535;
+    padding-bottom: 20px;
+    text-align: left;
+    
+}
+.ending{
+    font-family: "Ubuntu", Sans-serif;
+    border-top: 1px solid white;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.ending a{
+    
+    text-decoration: none;
+    color: white;
+}
+.end-link-1{
+    line-height: 1.5;
+    display: inline-flex;
+    justify-content: center;
+    margin-right:20px;
+}
+.end-link-2{
+    margin-right:50px;
+    line-height: 2.5;
+    display: inline-flex;
+}
+.text-last{
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+/* Responsive fixes only: keeps the same look, but lets the layout breathe on every screen size. */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+    .nav-bar {
+        height: auto;
+        min-height: 72px;
+        margin-bottom: 0;
+    }
+
+    .nav-bar-box {
+        align-items: center;
+        min-height: 72px;
+    }
+
+    .awash-logo {
+        width: min(55vw, 260px);
+        margin-top: 0;
+    }
+
+    .hamburger-button {
+        padding-top: 0;
+    }
+
+    .slideshow-container,
+    .mySlides,
+    .mySlides img {
+        height: clamp(230px, 62vw, 360px);
+    }
+
+    .img-box-1,
+    .img-box-2,
+    .img-box-3,
+    .img-box-4,
+    .img-box-5,
+    .img-box-6 {
+        overflow: hidden;
+    }
+
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6 {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .img-1-text,
+    .img-2-text,
+    .img-3-text,
+    .img-4-text,
+    .img-5-text,
+    .img-6-text {
+        padding-right: 5vw;
+        padding-bottom: 18px;
+    }
+
+    .slideshow-viewport {
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    .slide-image {
+        height: clamp(180px, 55vw, 280px);
+    }
+
+    .slide-body {
+        padding: 28px 20px;
+    }
+
+    .slide-description {
+        font-size: 16px;
+    }
+
+    .slide-footer-img {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 12px;
+        padding-bottom: 48px;
+    }
+
+    .slide-footer-img-1 {
+        width: 76px;
+        height: 42px;
+        object-fit: contain;
+    }
+
+    .comp {
+        margin-left: 6vw;
+        margin-right: 6vw;
+        text-align: center;
+    }
+
+    .comp-img-1,
+    .comp-img-2,
+    .comp-img-3,
+    .comp-img-4,
+    .comp-img-5 {
+        width: min(40vw, 170px);
+        height: min(34vw, 145px);
+
+    }
+
+    input[type="email"],
+    button[type="submit"] {
+        width: calc(100% - 26px);
+        min-height: 42px;
+    }
+
+    .ending {
+        padding-right: 20px;
+    }
+
+@media (min-width: 769px) {
+.pc-only{
+    display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", Sans-serif;
+    overflow-x:hidden;
+}
+body{
+    overflow-x:hidden;
+    max-width: 100%;
+}
+.nav-bar{
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+.nav-bar-box{
+    position: fixed;
+    top: 0px;
+    right: 8vw;
+    left: 8vw;
+    z-index: 999;
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    height: 9vw;
+    border-radius: 15px;
+    width: 80vw;
+}
+.hamburger-button{
+    display: none;
+}
+.nav-bar-box .awash-logo{
+    width: 20vw;
+    height: 6vw;
+}
+.pc-only .list-link-top{
+    padding-top: 1vw;
+    display: flex;
+    list-style: none;
+    gap:2vw;
+}
+.pc-only .list-link-top a{
+    color: grey;
+    text-decoration: none;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 1vw;
+    font-weight: 7vw;
+}
+.pc-only .list-link-bottom{
+    padding-top: 1vw;
+    display: flex;
+    list-style: none;
+    gap:1vw;
+}
+.pc-only .list-link-bottom a{
+    color: #000066;
+    text-decoration: none;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 0.9vw;
+    font-weight: 750;
+}
+.slideshow-container {
+    margin: auto;
+}
+.inner-link-1, 
+.inner-link-2 {
+    font-family: "Ubuntu", Sans-serif;
+    display: inline-block;
+    padding: 1vw 2vw; /* Uses vw units to scale nicely on mobile */
+    background-color: #d57535;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 550;
+    border-radius: 10px;
+    font-size: 1.3vw;
+}
+.learn-more-box-1 {
+    left:10%;
+    bottom: 25%;
+}
+
+.personal-banking-box {
+    left:10%;
+    bottom: 25%;
+}
+.pc-only .link-bar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    background-color: #e6e6e6;
+    padding: 10px ;
+    border-radius: 50px;
+}
+
+.pc-only .link-bar .box {
+    border-radius: 50px;
+}
+
+.pc-only .link-bar a {
+    text-decoration: none;
+    color: #555555;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 1.4vw;
+    font-weight: 500;
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+.pc-only .link-bar .box:first-child {
+    background-color: white;
+}
+
+.pc-only .link-bar .box:first-child a {
+    color: #00005c;
+    font-weight: 700;
+}
+
+.img-box-1,.section-3,.section-4,.section-5,.section-6,.section-7{
+    display: none;
+}
+/*Advanced*/
+.hero-slideshow-section .slideshow-viewport {
+        margin: 50px auto;
+        border-radius: 12px;
+    }
+
+    /* Force-restarts the keyframe loop smoothly */
+    .hero-slideshow-section .slideshow-track {
+        display: flex;
+        width: 700%; 
+        animation: multiSlideShow 35s infinite ease-in-out;
+    }
+
+    /* Keep the slide sizing structurally simple for the animation engine */
+    .hero-slideshow-section .promo-slide {
+        width: 14.2857%; 
+        flex-shrink: 0;
+        position: relative; /* Context for absolute positioning */
+        height: 450px;       
+        background: #fff;
+        display: block;     /* Removes conflicting mobile flex rules */
+    }
+
+    /* Left Side: Pin to left half */
+    .hero-slideshow-section .slide-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;         
+        height: 100%;        
+        object-fit: cover;
+    }
+
+    /* Right Side: Pin to right half */
+    .hero-slideshow-section .slide-body {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;         
+        height: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        text-align: left;       
+        align-items: flex-start; 
+        box-sizing: border-box;
+        border-top: none;
+        border-left: 1px solid #eee;
+        background: #fafafa;
+    }
+
+    .hero-slideshow-section .slide-description {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    /* Fixes specialized asset for card slide */
+    .hero-slideshow-section .promo-slide:last-child .slide-image {
+        object-fit: contain; 
+        padding: 40px;
+        background: #ffffff; 
+    }
+
+
+@keyframes multiSlideShow {
+    0%, 11% { transform: translateX(0%); }
+    14%, 25% { transform: translateX(-14.2857%); }
+    28%, 39% { transform: translateX(-28.5714%); }
+    42%, 53% { transform: translateX(-42.8571%); }
+    56%, 67% { transform: translateX(-57.1428%); }
+    70%, 81% { transform: translateX(-71.4285%); }
+    84%, 95% { transform: translateX(-85.7142%); }
+    100% { transform: translateX(0%); }
+}
+.footer-sec{
+    background-color: #000066;
+}
+.footer-sec{
+    padding-top: 35px;
+}
+.footer-logo-img{
+    height: 200px;
+    width:190px;
+}
+.footer-text{
+    padding-top: 50px;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #d57535;
+    padding-bottom: 10px;
+}
+input[type="email"] {
+    margin-left: 10px;
+    width: 270px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 3vw;
+}
+button[type="submit"] {
+    margin-left: 13px; 
+    background-color:#f18825;
+    color: #000066;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.follow-us-text{
+    padding-top: 50px;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #d57535;
+    padding-bottom: 10px;
+}
+.pc{
+    margin-left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10vw;
+}
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.swift-code{
+    padding-top: 40px;
+}
+.first-last-line{
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 580;
+    font-size: 25px;
+    color: #d57535;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.swift-code{
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 580;
+    font-size: 20px;
+    color: #d57535;
+    padding-bottom: 20px;
+    text-align: left;
+    
+}
+.ending{
+    font-family: "Ubuntu", Sans-serif;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.ending a{
+    text-decoration: none;
+    color: white;
+}
+.end-link-1{
+    line-height: 1.5;
+    justify-content: center;
+    margin-right:20px;
+}
+.end-link-2{
+    margin-right:50px;
+    line-height: 2.5;
+}
+
+.ending {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text-last {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+.get-text{
+    padding-top: 40px;
+    font-family: "Ubuntu", Sans-serif;
+    text-align: center;
+    color: #7a7a7a;
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+.comp{
+    display: none;
+}
+.comp-img-1,.comp-img-2,.comp-img-3,.comp-img-4,.comp-img-5{
+    display:inline-block;
+    margin: 1vw;
+    border-width: .1px .1px .1px .1px;
+    border-style: solid;
+    border-color: #7a7a7a;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+}
+.compt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+.slide-footer-img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+.slide-footer-img-1 {
+    height: 63px;
+    width: 150px;
+}
+.sec-9-text-1{
+    padding-top: 4vw;
+    text-align: center;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 25px;
+    color:#000066;
+    font-weight: bold;
+}
+.slide-cta-button {
+    display: inline-block;
+    padding: 12px 40px; 
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.slide-cta-button:hover {
+    background-color: #0056b3;
+}
+.sec-9-text-2{
+    text-align: center;
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+    line-height: 1.5;
+    padding-top:30px;
+    padding-bottom:10px;
+}
+.count-img{
+    display: none;
+}
+.count-1-img {
+    width: 50vw;
+    height: 17vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lucy,
+.student-sol,
+.smart-children,
+.elders,
+.investment,
+.cpss {
+    margin-top: 2vw;
+    border-radius: 15px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    width: 355px;
+}
+
+.lucy,
+.elders { margin-left: 15vw; }
+
+.lucy,
+.student-sol,
+.smart-children { height: 500px; }
+
+.elders,
+.investment,
+.cpss { height: 550px; }
+
+.img-box-lucy-title,
+.img-box-student-sol-title,
+.img-box-smart-children-title,
+.img-box-elders-title,
+.img-box-investment-title,
+.img-box-cpss-title {
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.img-lucy-text,
+.img-student-sol-text,
+.img-smart-children-text,
+.img-elders-text,
+.img-investment-text,
+.img-cpss-text {
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+
+.learn-more-lucy-box,
+.learn-more-student-sol-box,
+.learn-more-smart-children-box,
+.learn-more-elders-box,
+.learn-more-investment-box,
+.learn-more-cpss-box {
+    margin-top: 20px;
+    height: 38px;
+    margin-left: 30px;
+    background: linear-gradient(90deg, #00005c 0%, #63323e 55%, #f18825 100%);
+    width: 160px;
+    border-radius: 6vw;
+    margin-bottom: 2vw;
+}
+
+.learn-more-lucy-box:hover,
+.learn-more-student-sol-box:hover,
+.learn-more-smart-children-box:hover,
+.learn-more-elders-box:hover,
+.learn-more-investment-box:hover,
+.learn-more-cpss-box:hover {
+    background: linear-gradient(90deg, #00005c 0%, #00005c 40%, #63323e 70%, #f18825 100%);
+    opacity: 0.9;
+}
+
+.inner-link-lucy,
+.inner-link-student-sol,
+.inner-link-smart-children,
+.inner-link-elders,
+.inner-link-investment,
+.inner-link-cpss {
+    display: inline-flex;
+    gap: 30px;
+    font-size: 15px;
+    font-family: "Ubuntu", Sans-serif;
+    padding-left: 2vw;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+.img-lucy, .img-student-sol, .img-smart-children, .img-elders, .img-investment, .img-cpss {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.block-things, .block-things-2 {
+    margin-right: 15vw;
+    display: flex;
+    gap: 20px;
+}
+.card {
+    text-align: center;
+}
+
+.card p {
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.card-block {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-block-1,
+.card-block-2,
+.card-block-3,
+.card-block-4 {
+    border-radius: 15px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    width: 280px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.card-block-1 img,
+.card-block-2 img,
+.card-block-3 img,
+.card-block-4 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-block-1 h3,
+.card-block-2 h3,
+.card-block-3 h3,
+.card-block-4 h3 {
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.card-block-1 p,
+.card-block-2 p,
+.card-block-3 p,
+.card-block-4 p {
+    font-family: "Ubuntu", Sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.learn-more-card-1-box,
+.learn-more-card-2-box,
+.learn-more-card-3-box,
+.learn-more-card-4-box {
+    display: flex;
+    justify-content: center;
+}
+.inner-link-card-1,
+.inner-link-card-2,
+.inner-link-card-3,
+.inner-link-card-4 {
+    font-size: 15px;
+    font-family: "Ubuntu", Sans-serif;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00005c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6vw;
+}
+.card-title-big{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #000066;
+}
+}
+
+@media (min-width: 769px) {
+    .nav-bar-box {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: min(90vw, 1220px);
+        height: auto;
+        min-height: 96px;
+        align-items: center;
+    }
+
+    .nav-bar-box .awash-logo {
+        align-items: center;
+        width: clamp(170px, 18vw, 260px);
+        height: auto;
+        margin-top: 20px;
+        flex-shrink: 0;
+    }
+
+    .pc-only .list-link-top,
+    .pc-only .list-link-bottom {
+        padding-left: clamp(24px, 6vw, 110px);
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .pc-only .list-link-top a {
+        font-size: clamp(12px, 0.9vw, 15px);
+    }
+
+    .pc-only .list-link-bottom a {
+        font-size: clamp(11px, 0.85vw, 14px);
+    }
+
+    .slideshow-container,
+    .mySlides,
+    .mySlides img {
+        height: clamp(430px, 52vw, 700px);
+    }
+
+    .inner-link-1,
+    .inner-link-2 {
+        font-size: clamp(16px, 1.15vw, 21px);
+    }
+
+    .pc-only .link-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: min(76vw, 1080px);
+    }
+
+    .pc-only .link-bar a {
+        font-size: clamp(14px, 1vw, 18px);
+    }
+
+    .block-things,
+    .block-things-2,
+    .card-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: min(92vw, 1180px);
+    }
+
+    .lucy,
+    .elders {
+        margin-left: 0;
+    }
+
+    .lucy,
+    .student-sol,
+    .smart-children,
+    .elders,
+    .investment,
+    .cpss {
+        width: min(355px, 92vw);
+        height: auto;
+        min-height: 500px;
+    }
+
+    .img-lucy,
+    .img-student-sol,
+    .img-smart-children,
+    .img-elders,
+    .img-investment,
+    .img-cpss {
+        height: clamp(150px, 13vw, 210px);
+    }
+
+    .card-block-1,
+    .card-block-2,
+    .card-block-3,
+    .card-block-4 {
+        width: min(280px, 92vw);
+    }
+
+    .count-1-img {
+        width: min(720px, 70vw);
+        height: auto;
+    }
+
+    .hero-slideshow-section .slideshow-viewport {
+        width: min(92vw, 1200px);
+        overflow: hidden;
+    }
+
+    .hero-slideshow-section .promo-slide {
+        height: clamp(360px, 35vw, 450px);
+    }
+
+    .compt {
+        flex-wrap: wrap;
+    }
+
+    .comp-img-1,
+    .comp-img-2,
+    .comp-img-3,
+    .comp-img-4,
+    .comp-img-5 {
+        width: clamp(120px, 10vw, 170px);
+        height: clamp(120px, 10vw, 170px);
+        object-fit: cover;
+    }
+
+    .pc {
+        margin-left: auto;
+        margin-right: auto;
+        width: min(90vw, 1180px);
+        justify-content: center;
+    }
+
+    .lists {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1050px) {
+    .nav-bar-box {
+        min-height: 118px;
+        align-items: flex-start;
+        padding-top: 16px;
+    }
+
+    .pc-only .list-link-top {
+        padding-top: 10px;
+    }
+
+    .pc-only .list-link-bottom {
+        padding-top: 10px;
+    }
+
+    .hero-slideshow-section .slide-body {
+        padding: 32px;
+    }
+}
